@@ -31,6 +31,31 @@ O Random Forest é uma técnica de aprendizado de máquina que usa várias árvo
 
 Em resumo, o Random Forest é uma técnica que usa muitas árvores de decisão trabalhando juntas para fazer previsões melhores e mais confiáveis em problemas de aprendizado de máquina.
 
+# *Explicação dos hiperparâmetros de Random Forest*
+
+* **n_estimators:** Quanto maior o número de árvores, melhor a generalização do modelo, mas também maior o tempo de treinamento.
+* **criterion:** A métrica de avaliação para dividir os nós. As opções mais comuns são **gini** e **entropy**.
+* **max_depth:** Quanto maior a profundidade, mais complexo o modelo, mas também mais propenso a overfitting.
+* **min_samples_split:** Quanto maior o número, mais conservador o modelo, mas também menos propenso a overfitting.
+* **min_samples_leaf:** Quanto maior o número, mais conservador o modelo, mas também menos propenso a overfitting.
+* **min_weight_fraction_leaf:** Quanto menor o número, mais o modelo pode se concentrar em classes minoritárias.
+* **max_features:** Quanto maior o número, mais flexível o modelo, mas também mais propenso a overfitting.
+* **max_leaf_nodes:** Limita o número de folhas em cada árvore.
+* **min_impurity_decrease:** Um nó só será dividido se a divisão melhorar a impureza em pelo menos um valor especificado.
+* **bootstrap:** Se amostras bootstrap são usadas ao construir árvores.
+* **oob_score:** Usa amostras out-of-bag para estimar a pontuação de generalização.
+* **n_jobs:** Usa vários núcleos para acelerar o treinamento.
+* **random_state:** Gera resultados reproduzíveis.
+* **verbose:** Controla a verbosidade do treinamento.
+* **warm_start:** Usa a solução da chamada anterior para ajustar o modelo.
+* **class_weight:** Dá pesos diferentes às classes para compensar um desbalanceamento.
+* **ccp_alpha:** Usa poda de complexidade mínima para reduzir a complexidade do modelo.
+* **max_samples:** Limita o número de amostras usadas para treinar cada árvore.
+
+**Observações:**
+
+* Os valores padrão dos hiperparâmetros podem não ser ótimos para todos os datasets. Portanto, é frequentemente necessário ajustar os hiperparâmetros para melhorar o desempenho do modelo.
+* A explicação dos hiperparâmetros é apenas um resumo. Para mais informações, consulte a documentação do Random ForestClassifier.
 
 # A diferença entre os dois:
 
